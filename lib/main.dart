@@ -3,7 +3,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:lumya/constants/custom_theme.dart';
 import 'package:lumya/l10n/app_localizations.dart';
 import 'package:lumya/l10n/l10n.dart';
-import 'package:lumya/constants/routes.dart';
+import 'package:lumya/constants/custom_routes.dart';
 
 void main() {
   runApp(const LumyaApp());
