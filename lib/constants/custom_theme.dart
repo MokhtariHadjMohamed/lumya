@@ -12,22 +12,41 @@ class CustomTheme {
     textTheme: TextTheme(
       // TODO Head Line
       headlineSmall: TextStyle(
-        fontSize: 20,
+        fontSize: 32,
         fontFamily: "Poppins",
         fontWeight: FontWeight.bold,
         color: CustomColor().secondary,
       ),
       headlineMedium: TextStyle(
-        fontSize: 24,
+        fontSize: 38,
         fontFamily: "Poppins",
         fontWeight: FontWeight.bold,
         color: CustomColor().secondary,
       ),
       headlineLarge: TextStyle(
-        fontSize: 32,
+        fontSize: 42,
         fontFamily: "Poppins",
         fontWeight: FontWeight.bold,
         color: CustomColor().secondary,
+      ),
+      // TODO Title
+      titleLarge: TextStyle(
+        fontSize: 28,
+        color: CustomColor().secondary,
+        fontFamily: "Poppins",
+        fontWeight: FontWeight.bold,
+      ),
+      titleMedium: TextStyle(
+        fontSize: 24,
+        color: CustomColor().secondary,
+        fontFamily: "Poppins",
+        fontWeight: FontWeight.bold,
+      ),
+      titleSmall: TextStyle(
+        fontSize: 20,
+        color: CustomColor().secondary,
+        fontFamily: "Poppins",
+        fontWeight: FontWeight.bold,
       ),
       // TODO Body
       bodySmall: TextStyle(

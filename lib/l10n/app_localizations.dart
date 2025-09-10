@@ -95,6 +95,18 @@ abstract class AppLocalizations {
     Locale('fr')
   ];
 
+  /// No description provided for @app_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Lumya'**
+  String get app_name;
+
+  /// No description provided for @app_slogen.
+  ///
+  /// In en, this message translates to:
+  /// **'Mind Coach'**
+  String get app_slogen;
+
   /// No description provided for @helloWorld.
   ///
   /// In en, this message translates to:

@@ -9,5 +9,11 @@ class AppLocalizationsFr extends AppLocalizations {
   AppLocalizationsFr([String locale = 'fr']) : super(locale);
 
   @override
+  String get app_name => 'Lumya';
+
+  @override
+  String get app_slogen => 'Mind Coach';
+
+  @override
   String get helloWorld => 'Bonjour le monde!';
 }
