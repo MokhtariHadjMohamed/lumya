@@ -107,11 +107,11 @@ abstract class AppLocalizations {
   /// **'Mind Coach'**
   String get app_slogen;
 
-  /// No description provided for @helloWorld.
+  /// No description provided for @skip.
   ///
   /// In en, this message translates to:
-  /// **'Hello World!'**
-  String get helloWorld;
+  /// **'Skip'**
+  String get skip;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

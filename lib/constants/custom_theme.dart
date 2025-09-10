@@ -4,10 +4,17 @@ import 'package:lumya/constants/custom_colors.dart';
 class CustomTheme {
   // TODO Light Theme
   final ThemeData _customLightTheme = ThemeData(
-    brightness: Brightness.light,
-    primaryColor: CustomColor().primery,
+    useMaterial3: true,
+    colorScheme: ColorScheme.light(
+      primary: CustomColor().primery,
+      secondary: CustomColor().secondary,
+      tertiary: CustomColor().tertiary,
+    ),
     scaffoldBackgroundColor: CustomColor().primery,
-    appBarTheme: AppBarTheme(backgroundColor: CustomColor().primery, elevation: 4),
+    appBarTheme: AppBarTheme(
+      backgroundColor: CustomColor().primery,
+      elevation: 4,
+    ),
 
     textTheme: TextTheme(
       // TODO Head Line
@@ -51,35 +58,35 @@ class CustomTheme {
       // TODO Body
       bodySmall: TextStyle(
         fontSize: 14,
-        color: CustomColor().secondary,
+        color: CustomColor().tertiary,
         fontFamily: "Poppins",
       ),
       bodyMedium: TextStyle(
         fontSize: 16,
-        color: CustomColor().secondary,
+        color: CustomColor().tertiary,
         fontFamily: "Poppins",
       ),
       bodyLarge: TextStyle(
         fontSize: 18,
-        color: CustomColor().secondary,
+        color: CustomColor().tertiary,
         fontFamily: "Poppins",
       ),
       // TODO Label
       labelSmall: TextStyle(
         fontSize: 14,
-        color: CustomColor().secondary,
+        color: CustomColor().primery,
         fontFamily: "Poppins",
         fontWeight: FontWeight.bold,
       ),
       labelMedium: TextStyle(
         fontSize: 16,
-        color: CustomColor().secondary,
+        color: CustomColor().primery,
         fontFamily: "Poppins",
         fontWeight: FontWeight.bold,
       ),
       labelLarge: TextStyle(
         fontSize: 24,
-        color: CustomColor().secondary,
+        color: CustomColor().primery,
         fontFamily: "Poppins",
         fontWeight: FontWeight.bold,
       ),
@@ -90,10 +97,17 @@ class CustomTheme {
 
   // TODO Dark Theme
   final ThemeData _customDarkTheme = ThemeData(
-    brightness: Brightness.dark,
-    primaryColor: CustomColor().primery,
+    useMaterial3: true,
+    colorScheme: ColorScheme.light(
+      primary: CustomColor().primery,
+      secondary: CustomColor().secondary,
+      tertiary: CustomColor().tertiary,
+    ),
     scaffoldBackgroundColor: CustomColor().primery,
-    appBarTheme: AppBarTheme(backgroundColor: CustomColor().primery, elevation: 4),
+    appBarTheme: AppBarTheme(
+      backgroundColor: CustomColor().primery,
+      elevation: 4,
+    ),
 
     textTheme: TextTheme(
       // TODO Head Line
@@ -134,24 +148,24 @@ class CustomTheme {
       // TODO Label
       labelSmall: TextStyle(
         fontSize: 14,
-        color: CustomColor().secondary,
+        color: CustomColor().primery,
         fontFamily: "Poppins",
         fontWeight: FontWeight.bold,
       ),
       labelMedium: TextStyle(
         fontSize: 16,
-        color: CustomColor().secondary,
+        color: CustomColor().primery,
         fontFamily: "Poppins",
         fontWeight: FontWeight.bold,
       ),
       labelLarge: TextStyle(
         fontSize: 24,
-        color: CustomColor().secondary,
+        color: CustomColor().primery,
         fontFamily: "Poppins",
         fontWeight: FontWeight.bold,
       ),
     ),
   );
-  ThemeData get customDarkTheme => _customDarkTheme;
 
+  ThemeData get customDarkTheme => _customDarkTheme;
 }

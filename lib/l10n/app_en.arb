@@ -2,5 +2,5 @@
     "@@locale": "en",
     "app_name": "Lumya",
     "app_slogen":"Mind Coach",
-    "helloWorld" : "Hello World!"
+    "skip": "Skip"
 }

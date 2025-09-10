@@ -17,6 +17,7 @@ class LumyaApp extends StatelessWidget {
     return MaterialApp.router(
       theme: CustomTheme().customLightTheme,
       darkTheme: CustomTheme().customDarkTheme,
+      themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: false,
       supportedLocales: L10n.all,
       localizationsDelegates: const [

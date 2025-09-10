@@ -1,6 +1,5 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:lumya/l10n/app_localizations.dart';
 import 'package:lumya/utils/custom_dimension.dart';
 
@@ -16,10 +15,12 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    sleep(Duration(seconds: 5));
-    Navigator.pushReplacementNamed(context, "/onboardingScreen");
+    Future.delayed(const Duration(seconds: 5), () {
+      if (mounted) {
+        context.go("/splashScreen/onboardingScreen");
+      }
+    });
   }
-
   @override
   Widget build(BuildContext context) {
     final customDimension = CustomDimension(context);

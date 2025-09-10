@@ -15,5 +15,5 @@ class AppLocalizationsFr extends AppLocalizations {
   String get app_slogen => 'Mind Coach';
 
   @override
-  String get helloWorld => 'Bonjour le monde!';
+  String get skip => 'Sauter';
 }
