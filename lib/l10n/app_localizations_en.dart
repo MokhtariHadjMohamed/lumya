@@ -43,4 +43,16 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get create_account => 'Create Account';
+
+  @override
+  String get create_account_login => 'Create Account';
+
+  @override
+  String get welcome_to_lumya_register => 'Welcome to the Lumya community. We are happy to have you with us.';
+
+  @override
+  String get full_name => 'Full Name:';
+
+  @override
+  String get confirm_password => 'Confirm Password:';
 }

@@ -95,77 +95,101 @@ abstract class AppLocalizations {
     Locale('fr')
   ];
 
-  /// No description provided for @app_name.
+  /// The name of the application
   ///
   /// In en, this message translates to:
   /// **'Lumya'**
   String get app_name;
 
-  /// No description provided for @app_slogen.
+  /// The slogan of the application
   ///
   /// In en, this message translates to:
   /// **'Mind Coach'**
   String get app_slogen;
 
-  /// No description provided for @skip.
+  /// Skip button text
   ///
   /// In en, this message translates to:
   /// **'Skip'**
   String get skip;
 
-  /// No description provided for @welcome_to_lumya.
+  /// Welcome message on the home screen
   ///
   /// In en, this message translates to:
   /// **'Welcome to Lumya'**
   String get welcome_to_lumya;
 
-  /// No description provided for @email.
+  /// Label for the email input field
   ///
   /// In en, this message translates to:
   /// **'E-mail:'**
   String get email;
 
-  /// No description provided for @password.
+  /// Label for the password input field
   ///
   /// In en, this message translates to:
   /// **'Password:'**
   String get password;
 
-  /// No description provided for @forgot_password.
+  /// Link text for forgotten password
   ///
   /// In en, this message translates to:
   /// **'Forgot Password?'**
   String get forgot_password;
 
-  /// No description provided for @log_in.
+  /// Button text for logging in
   ///
   /// In en, this message translates to:
   /// **'Log In'**
   String get log_in;
 
-  /// No description provided for @dont_have_account.
+  /// Prompt for users without an account
   ///
   /// In en, this message translates to:
   /// **'Don\'t have an account? '**
   String get dont_have_account;
 
-  /// No description provided for @sign_up.
+  /// Button text for signing up
   ///
   /// In en, this message translates to:
   /// **'Sign Up'**
   String get sign_up;
 
-  /// No description provided for @already_have_account.
+  /// Prompt for users with an existing account
   ///
   /// In en, this message translates to:
   /// **'Already have an account? '**
   String get already_have_account;
 
-  /// No description provided for @create_account.
+  /// Button text for creating a new account
   ///
   /// In en, this message translates to:
   /// **'Create Account'**
   String get create_account;
+
+  /// Button text for creating a new account
+  ///
+  /// In en, this message translates to:
+  /// **'Create Account'**
+  String get create_account_login;
+
+  /// Welcome message on the registration screen
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome to the Lumya community. We are happy to have you with us.'**
+  String get welcome_to_lumya_register;
+
+  /// Label for the full name input field
+  ///
+  /// In en, this message translates to:
+  /// **'Full Name:'**
+  String get full_name;
+
+  /// Label for the confirm password input field
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm Password:'**
+  String get confirm_password;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

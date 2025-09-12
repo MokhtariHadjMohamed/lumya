@@ -1,18 +1,71 @@
 {
-    "@@locale": "en",
-    "app_name": "Lumya",
-    "app_slogen":"Mind Coach",
-    "skip": "Skip",
+  "@@locale": "en",
+  "app_name": "Lumya",
+  "@app_name": {
+    "description": "The name of the application"
+  },
+  "app_slogen": "Mind Coach",
+  "@app_slogen": {
+    "description": "The slogan of the application"
+  },
+  "skip": "Skip",
+  "@skip": {
+    "description": "Skip button text"
+  },
+  "welcome_to_lumya": "Welcome to Lumya",
+  "@welcome_to_lumya": {
+    "description": "Welcome message on the home screen"
+  },
+  "email": "E-mail:",
+  "@email": {
+    "description": "Label for the email input field"
+  },
+  "password": "Password:",
+  "@password": {
+    "description": "Label for the password input field"
+  },
+  "forgot_password": "Forgot Password?",
+  "@forgot_password": {
+    "description": "Link text for forgotten password"
+  },
+  "log_in": "Log In",
+  "@log_in": {
+    "description": "Button text for logging in"
+  },
+  "dont_have_account": "Don't have an account? ",
+  "@dont_have_account": {
+    "description": "Prompt for users without an account"
+  },
+  "sign_up": "Sign Up",
+  "@sign_up": {
+    "description": "Button text for signing up"
+  },
 
-    "welcome_to_lumya": "Welcome to Lumya",
-    "email": "E-mail:",
-    "password": "Password:",
-    "forgot_password":"Forgot Password?",
-    "log_in": "Log In",
-    "dont_have_account": "Don't have an account? ",
+  "already_have_account": "Already have an account? ",
+  "@already_have_account": {
+    "description": "Prompt for users with an existing account"
+  },
 
-    "sign_up": "Sign Up",
-    "already_have_account": "Already have an account? ",
-    "create_account": "Create Account"
+  "create_account": "Create Account",
+  "@create_account": {
+    "description": "Button text for creating a new account"
+  },
 
+  "create_account_login": "Create Account",
+  "@create_account_login": {
+    "description": "Button text for creating a new account"
+  },
+
+  "welcome_to_lumya_register": "Welcome to the Lumya community. We are happy to have you with us.",
+  "@welcome_to_lumya_register": {
+    "description": "Welcome message on the registration screen"
+  },
+  "full_name": "Full Name:",
+  "@full_name": {
+    "description": "Label for the full name input field"
+  },
+  "confirm_password": "Confirm Password:",
+  "@confirm_password": {
+    "description": "Label for the confirm password input field"
+  }
 }

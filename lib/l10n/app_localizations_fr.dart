@@ -36,11 +36,23 @@ class AppLocalizationsFr extends AppLocalizations {
   String get dont_have_account => 'Vous n\'avez pas de compte? ';
 
   @override
-  String get sign_up => 'S\'inscrire';
+  String get sign_up => 'Créer un compte';
 
   @override
-  String get already_have_account => 'Vous avez déjà un compte? ';
+  String get already_have_account => 'Déjà membre? ';
 
   @override
   String get create_account => 'Créer un compte';
+
+  @override
+  String get create_account_login => 'Inscrivez-vous';
+
+  @override
+  String get welcome_to_lumya_register => 'Bienvenue dans la communauté Lumya. Nous sommes heureux de vous compter parmi nous.';
+
+  @override
+  String get full_name => 'Nom et prénom:';
+
+  @override
+  String get confirm_password => 'Confirmer le mot de passe:';
 }

@@ -19,7 +19,7 @@ class CustomTextField extends StatefulWidget {
   final Color passwordToggleColor;
   final double sizeToggleIcon;
 
-  final String forgotPassword;
+  final String? forgotPassword;
   final TextStyle? forgotPasswordStyle;
   final Function()? onTapForgotPassword;
 
@@ -37,7 +37,7 @@ class CustomTextField extends StatefulWidget {
     this.verticalPadding = const EdgeInsets.symmetric(vertical: 8.0),
     this.passwordToggleColor = CustomColor.secondary,
     this.sizeToggleIcon = 20.0,
-    this.forgotPassword = "Forgot Password?",
+    this.forgotPassword,
     this.forgotPasswordStyle,
     this.onTapForgotPassword,
   });
@@ -126,12 +126,12 @@ class _CustomTextFieldState extends State<CustomTextField> {
                 : null,
           ),
         ),
-        if (widget.isPassword)
+        if (widget.isPassword && widget.forgotPassword != null)
           Ink(
             child: Align(
               alignment: Alignment.centerRight, // moves the whole widget
               child: Text(
-                widget.forgotPassword,
+                widget.forgotPassword ?? "",
                 style:
                     widget.forgotPasswordStyle ??
                     widget.textStyle.copyWith(

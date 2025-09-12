@@ -33,7 +33,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
         curve: Curves.easeInOut,
       );
     } else {
-      context.go("/$logInScreen");
+      context.go(logInScreen);
     }
   }
 
@@ -48,22 +48,24 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
           horizontal: customDimension.widthSize(.05),
         ),
         actions: [
-          CustomButton(
-            text: AppLocalizations.of(context)!.skip,
-            width: customDimension.widthSize(.25),
-            height: customDimension.heightSize(.04),
-            textStyle: Theme.of(context).textTheme.labelSmall,
-            icon: SvgPicture.asset(
-              'assets/icons/skip_arrow.svg',
-              width: customDimension.widthSize(.05),
-              colorFilter: ColorFilter.mode(
-                Theme.of(context).colorScheme.primary,
-                BlendMode.srcIn,
+          Spacer(flex: 2,),
+          Flexible(
+            child: CustomButton(
+              text: AppLocalizations.of(context)!.skip,
+              height: customDimension.heightSize(.04),
+              textStyle: Theme.of(context).textTheme.labelSmall,
+              icon: SvgPicture.asset(
+                'assets/icons/skip_arrow.svg',
+                width: customDimension.widthSize(.05),
+                colorFilter: ColorFilter.mode(
+                  Theme.of(context).colorScheme.primary,
+                  BlendMode.srcIn,
+                ),
               ),
+              onPressed: () {
+                context.go(logInScreen);
+              },
             ),
-            onPressed: () {
-              context.go("/$logInScreen");
-            },
           ),
         ],
       ),

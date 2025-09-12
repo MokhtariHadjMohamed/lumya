@@ -2,20 +2,21 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:lumya/constants/custom_string.dart';
-import 'package:lumya/l10n/app_localizations.dart';
-import 'package:lumya/presentation/widgets/auth_platform.dart';
-import 'package:lumya/presentation/widgets/custom_button.dart';
 import 'package:lumya/presentation/widgets/custom_text_field.dart';
-import '../../../utils/custom_dimension.dart';
 
-class LogInScreen extends StatefulWidget {
-  const LogInScreen({super.key});
+import '../../../l10n/app_localizations.dart';
+import '../../../utils/custom_dimension.dart';
+import '../../widgets/auth_platform.dart';
+import '../../widgets/custom_button.dart';
+
+class RegisterScreen extends StatefulWidget {
+  const RegisterScreen({super.key});
 
   @override
-  State<LogInScreen> createState() => _LogInScreenState();
+  State<RegisterScreen> createState() => _RegisterScreenState();
 }
 
-class _LogInScreenState extends State<LogInScreen> {
+class _RegisterScreenState extends State<RegisterScreen> {
   @override
   Widget build(BuildContext context) {
     final customDimension = CustomDimension(context);
@@ -35,13 +36,13 @@ class _LogInScreenState extends State<LogInScreen> {
               children: [
                 Image(
                   image: AssetImage("assets/images/logo.png"),
-                  width: customDimension.width60(),
+                  width: customDimension.width40(),
                 ),
                 Text(
-                  appLocal.welcome_to_lumya,
-                  style: theme.textTheme.headlineMedium,
+                  appLocal.welcome_to_lumya_register,
+                  style: theme.textTheme.titleSmall,
                 ),
-                LogInForm(),
+                RegisterForm(),
                 Divider(color: theme.colorScheme.tertiary),
                 AuthPlatform(),
               ],
@@ -53,8 +54,8 @@ class _LogInScreenState extends State<LogInScreen> {
   }
 }
 
-class LogInForm extends StatelessWidget {
-  const LogInForm({super.key});
+class RegisterForm extends StatelessWidget {
+  const RegisterForm({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -65,6 +66,17 @@ class LogInForm extends StatelessWidget {
     return Column(
       spacing: customDimension.widthSize(.05),
       children: [
+        CustomTextField(
+          background: theme.colorScheme.primary,
+          textStyle: theme.textTheme.bodyMedium!.copyWith(
+            color: theme.colorScheme.tertiary,
+          ),
+          hintStyle: theme.textTheme.bodyMedium!.copyWith(
+            color: theme.colorScheme.secondary,
+          ),
+          hint: appLocal.full_name,
+          onChanged: (p0) => {},
+        ),
         CustomTextField(
           background: theme.colorScheme.primary,
           keyboardType: TextInputType.emailAddress,
@@ -88,31 +100,40 @@ class LogInForm extends StatelessWidget {
             color: theme.colorScheme.secondary,
           ),
           hint: appLocal.password,
-          forgotPassword: appLocal.forgot_password,
-          forgotPasswordStyle: theme.textTheme.bodyMedium!.copyWith(
-            color: theme.colorScheme.tertiary,
-            fontWeight: FontWeight.w700,
-          ),
           onChanged: (p0) => {},
           onTapForgotPassword: () {},
         ),
-        CustomButton(onPressed: () {}, text: appLocal.log_in),
+        CustomTextField(
+          background: theme.colorScheme.primary,
+          keyboardType: TextInputType.visiblePassword,
+          isPassword: true,
+          textStyle: theme.textTheme.bodyMedium!.copyWith(
+            color: theme.colorScheme.tertiary,
+          ),
+          hintStyle: theme.textTheme.bodyMedium!.copyWith(
+            color: theme.colorScheme.secondary,
+          ),
+          hint: appLocal.confirm_password,
+          onChanged: (p0) => {},
+          onTapForgotPassword: () {},
+        ),
+        CustomButton(onPressed: () {}, text: appLocal.sign_up),
         Text.rich(
           TextSpan(
-            text: appLocal.dont_have_account,
+            text: appLocal.already_have_account,
             style: theme.textTheme.bodyMedium!.copyWith(
               color: theme.colorScheme.secondary,
             ),
             children: [
               TextSpan(
-                text: appLocal.create_account_login,
+                text: " ${appLocal.log_in}",
                 style: theme.textTheme.bodyMedium!.copyWith(
                   color: theme.colorScheme.tertiary,
                   fontWeight: FontWeight.w700,
                 ),
                 recognizer: TapGestureRecognizer()
                   ..onTap = () {
-                    context.push(logInScreen + registerScreen);
+                    context.go(logInScreen);
                   },
               ),
             ],

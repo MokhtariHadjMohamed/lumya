@@ -1,17 +1,69 @@
 {
   "@@locale": "fr",
   "app_name": "Lumya",
+  "@app_name": {
+    "description": "The name of the application"
+  },
   "app_slogen": "Mind Coach",
+  "@app_slogen": {
+    "description": "The slogan of the application"
+  },
   "skip": "Sauter",
-
+  "@skip": {
+    "description": "Skip button text"
+  },
   "welcome_to_lumya": "Bienvenue sur Lumya",
+  "@welcome_to_lumya": {
+    "description": "Welcome message on the home screen"
+  },
   "email": "Address email:",
+  "@email": {
+    "description": "Label for the email input field"
+  },
   "password": "Mot de passe:",
+  "@password": {
+    "description": "Label for the password input field"
+  },
   "forgot_password": "Mot de passe oublié?",
+  "@forgot_password": {
+    "description": "Link text for forgotten password"
+  },
   "log_in": "Se connecter",
+  "@log_in": {
+    "description": "Button text for logging in"
+  },
   "dont_have_account": "Vous n'avez pas de compte? ",
+  "@dont_have_account": {
+    "description": "Prompt for users without an account"
+  },
+  "sign_up": "Créer un compte",
+  "@sign_up": {
+    "description": "Button text for signing up"
+  },
 
-  "sign_up": "S'inscrire",
-  "already_have_account": "Vous avez déjà un compte? ",
-  "create_account": "Créer un compte"
+  "create_account_login": "Inscrivez-vous",
+  "@create_account_login": {
+    "description": "Text click in login screen to change page"
+  },
+
+  "already_have_account": "Déjà membre? ",
+  "@already_have_account": {
+    "description": "Prompt for users with an existing account"
+  },
+  "create_account": "Créer un compte",
+  "@create_account": {
+    "description": "Button text for creating a new account"
+  },
+  "welcome_to_lumya_register": "Bienvenue dans la communauté Lumya. Nous sommes heureux de vous compter parmi nous.",
+  "@welcome_to_lumya_register": {
+    "description": "Welcome message on the registration screen"
+  },
+  "full_name": "Nom et prénom:",
+  "@full_name": {
+    "description": "Label for the full name input field"
+  },
+  "confirm_password": "Confirmer le mot de passe:",
+  "@confirm_password": {
+    "description": "Label for the confirm password input field"
+  }
 }
