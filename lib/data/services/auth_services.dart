@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:lumya/constants/custom_string.dart';
-import 'package:lumya/data/models/user.dart';
+import '../../constants/custom_string.dart';
+import '../models/user.dart';
 
 class AuthServices {
   late Dio dio;

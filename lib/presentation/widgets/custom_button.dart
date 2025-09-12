@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lumya/constants/custom_colors.dart';
+import '../../constants/custom_colors.dart';
 
 class CustomButton extends StatelessWidget {
   final Function() onPressed;

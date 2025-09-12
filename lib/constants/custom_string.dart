@@ -3,7 +3,7 @@ final baseUrl = 'http://localhost:8000';
 
 
 // TODO Routes
-const splashScreen = '/splashScreen';
+const splashScreen = '/';
 const onboardingScreen = 'onboardingScreen';
-const loginScreen = 'loginScreen';
+const logInScreen = 'loginScreen';
 const registerScreen = 'registerScreen';

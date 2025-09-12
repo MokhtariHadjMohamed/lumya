@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lumya/constants/custom_colors.dart';
+import 'custom_colors.dart';
 
 class CustomTheme {
   // TODO Light Theme

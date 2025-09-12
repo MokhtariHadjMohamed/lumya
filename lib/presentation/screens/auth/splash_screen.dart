@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:lumya/l10n/app_localizations.dart';
-import 'package:lumya/utils/custom_dimension.dart';
+import '../../../constants/custom_string.dart';
+import '../../../l10n/app_localizations.dart';
+import '../../../utils/custom_dimension.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -17,10 +18,11 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Future.delayed(const Duration(seconds: 5), () {
       if (mounted) {
-        context.go("/splashScreen/onboardingScreen");
+        context.go("/$onboardingScreen");
       }
     });
   }
+
   @override
   Widget build(BuildContext context) {
     final customDimension = CustomDimension(context);

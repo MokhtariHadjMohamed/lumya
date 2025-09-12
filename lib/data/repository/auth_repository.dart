@@ -1,5 +1,5 @@
-import 'package:lumya/data/models/user.dart';
-import 'package:lumya/data/services/auth_services.dart';
+import '../models/user.dart';
+import '../services/auth_services.dart';
 
 class AuthRepository {
   final AuthServices authServices;

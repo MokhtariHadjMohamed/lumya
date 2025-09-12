@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:lumya/l10n/app_localizations.dart';
-import 'package:lumya/presentation/widgets/custom_button.dart';
-import 'package:lumya/presentation/widgets/custom_icon_button.dart';
-import 'package:lumya/presentation/widgets/pagination_indicator.dart';
-import 'package:lumya/utils/custom_dimension.dart';
+import 'package:go_router/go_router.dart';
+import '../../../constants/custom_string.dart';
+import '../../../l10n/app_localizations.dart';
+import '../../widgets/custom_button.dart';
+import '../../widgets/custom_icon_button.dart';
+import '../../widgets/pagination_indicator.dart';
+import '../../../utils/custom_dimension.dart';
 
 class OnBoardingScreen extends StatefulWidget {
   const OnBoardingScreen({super.key});
@@ -31,7 +33,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
         curve: Curves.easeInOut,
       );
     } else {
-      print("Onboarding finished");
+      context.go("/$logInScreen");
     }
   }
 
@@ -53,7 +55,9 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
               'assets/icons/skip_arrow.svg',
               width: customDimension.widthSize(.05),
             ),
-            onPressed: () {},
+            onPressed: () {
+              context.go("/$logInScreen");
+            },
           ),
         ],
       ),

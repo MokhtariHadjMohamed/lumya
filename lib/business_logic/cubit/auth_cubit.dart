@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
-import 'package:lumya/data/models/user.dart';
-import 'package:lumya/data/repository/auth_repository.dart';
+import '../../data/models/user.dart';
+import '../../data/repository/auth_repository.dart';
 import 'package:meta/meta.dart';
 
 part 'auth_state.dart';

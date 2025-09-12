@@ -1,7 +1,8 @@
 import 'package:go_router/go_router.dart';
-import 'package:lumya/constants/custom_string.dart';
-import 'package:lumya/presentation/screens/auth/on_boarding_screen.dart';
-import 'package:lumya/presentation/screens/auth/splash_screen.dart';
+import 'custom_string.dart';
+import '../presentation/screens/auth/log_in_screen.dart';
+import '../presentation/screens/auth/on_boarding_screen.dart';
+import '../presentation/screens/auth/splash_screen.dart';
 
 class CustomRoutes {
   final GoRouter _route = GoRouter(
@@ -17,6 +18,9 @@ class CustomRoutes {
             path: onboardingScreen,
             builder: (context, state) => const OnBoardingScreen(),
           ),
+          GoRoute(path: logInScreen, builder: (context, state) {
+            return const LogInScreen();
+          }),
         ],
       ),
       // TODO User Routes
