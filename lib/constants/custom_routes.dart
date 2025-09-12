@@ -6,7 +6,6 @@ import '../presentation/screens/auth/splash_screen.dart';
 
 class CustomRoutes {
   final GoRouter _route = GoRouter(
-    // initialLocation: "$splashScreen/$onboardingScreen",
     initialLocation: splashScreen,
     routes: [
       // TODO Auth Routes

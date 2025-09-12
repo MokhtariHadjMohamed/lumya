@@ -1,43 +1,55 @@
 import 'package:flutter/material.dart';
-import '../../constants/custom_colors.dart';
 
 class CustomButton extends StatelessWidget {
   final Function() onPressed;
-  final String text;
+  final String? text;
   final Widget? icon;
   final TextStyle? textStyle;
+
+  final double width;
+  final double height;
+  final ButtonStyle? buttonStyle;
 
   const CustomButton({
     super.key,
     required this.onPressed,
-    required this.text,
+    this.text,
     this.icon,
     this.textStyle,
+    this.width = double.infinity,
+    this.height = 50.0,
+    this.buttonStyle,
   });
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
-    return InkWell(
-      onTap: onPressed,
-      borderRadius: BorderRadius.circular(8),
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-        decoration: BoxDecoration(
-          color: CustomColor().secondary,
-          borderRadius: BorderRadius.circular(8),
+    return SizedBox(
+      width: width,
+      height: height,
+      child: ElevatedButton(
+        onPressed: onPressed,
+        style: buttonStyle ?? ElevatedButton.styleFrom(
+          backgroundColor: theme.colorScheme.secondary,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12.0),
+          ),
         ),
         child: Row(
           mainAxisSize: MainAxisSize.min,
+          spacing: 8.0,
           children: [
-            Text(
-              text,
-              style:
-                  textStyle ??
-                  theme.textTheme.labelSmall,
-            ),
-            if (icon != null) ...[const SizedBox(width: 8), icon!],
+            if (text != null)
+              Text(
+                text!,
+                style:
+                    textStyle ??
+                    theme.textTheme.labelLarge!.copyWith(
+                      color: theme.colorScheme.primary,
+                    ),
+              ),
+            if (icon != null) icon!,
           ],
         ),
       ),

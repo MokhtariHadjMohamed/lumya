@@ -19,7 +19,7 @@ class PaginationIndicator extends StatelessWidget {
         (index) => Icon(
           Icons.circle,
           size: pointerSize,
-          color: index == currentIndex ? CustomColor().secondary : CustomColor().tertiary ,
+          color: index == currentIndex ? CustomColor.secondary : CustomColor.tertiary ,
         ),
       ),
     );

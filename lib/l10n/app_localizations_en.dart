@@ -1,6 +1,5 @@
 // ignore: unused_import
 import 'package:intl/intl.dart' as intl;
-
 import 'app_localizations.dart';
 
 // ignore_for_file: type=lint
@@ -17,4 +16,31 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get skip => 'Skip';
+
+  @override
+  String get welcome_to_lumya => 'Welcome to Lumya';
+
+  @override
+  String get email => 'E-mail:';
+
+  @override
+  String get password => 'Password:';
+
+  @override
+  String get forgot_password => 'Forgot Password?';
+
+  @override
+  String get log_in => 'Log In';
+
+  @override
+  String get dont_have_account => 'Don\'t have an account? ';
+
+  @override
+  String get sign_up => 'Sign Up';
+
+  @override
+  String get already_have_account => 'Already have an account? ';
+
+  @override
+  String get create_account => 'Create Account';
 }

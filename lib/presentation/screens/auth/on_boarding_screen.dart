@@ -6,7 +6,7 @@ import '../../../l10n/app_localizations.dart';
 import '../../widgets/custom_button.dart';
 import '../../widgets/custom_icon_button.dart';
 import '../../widgets/pagination_indicator.dart';
-import '../../../utils/custom_dimension.dart';
+import 'package:lumya/utils/custom_dimension.dart';
 
 class OnBoardingScreen extends StatefulWidget {
   const OnBoardingScreen({super.key});
@@ -50,10 +50,16 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
         actions: [
           CustomButton(
             text: AppLocalizations.of(context)!.skip,
+            width: customDimension.widthSize(.25),
+            height: customDimension.heightSize(.04),
             textStyle: Theme.of(context).textTheme.labelSmall,
             icon: SvgPicture.asset(
               'assets/icons/skip_arrow.svg',
               width: customDimension.widthSize(.05),
+              colorFilter: ColorFilter.mode(
+                Theme.of(context).colorScheme.primary,
+                BlendMode.srcIn,
+              ),
             ),
             onPressed: () {
               context.go("/$logInScreen");

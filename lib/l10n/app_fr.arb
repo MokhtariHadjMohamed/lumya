@@ -1,6 +1,17 @@
 {
-    "@@locale": "fr",
-    "app_name": "Lumya",
-    "app_slogen":"Mind Coach",
-    "skip": "Sauter"
+  "@@locale": "fr",
+  "app_name": "Lumya",
+  "app_slogen": "Mind Coach",
+  "skip": "Sauter",
+
+  "welcome_to_lumya": "Bienvenue sur Lumya",
+  "email": "Address email:",
+  "password": "Mot de passe:",
+  "forgot_password": "Mot de passe oublié?",
+  "log_in": "Se connecter",
+  "dont_have_account": "Vous n'avez pas de compte? ",
+
+  "sign_up": "S'inscrire",
+  "already_have_account": "Vous avez déjà un compte? ",
+  "create_account": "Créer un compte"
 }
